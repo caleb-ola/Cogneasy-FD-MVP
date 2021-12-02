@@ -28,7 +28,9 @@ const Mentors = () => {
       <div className="container">
         <div className="section-header fw-bold text-center mt-5">
           <p className="fs-5 mb-2">OUR MENTORS</p>
-          <h1 className="my-2 fw-bold">Appropiate Content Stays Here</h1>
+          <h1 className="my-2 fw-bold">
+            Explore our growing catalogue of the finest mentors{" "}
+          </h1>
         </div>
 
         <div className="row my-5">

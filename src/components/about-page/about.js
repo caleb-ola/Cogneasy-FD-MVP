@@ -10,7 +10,7 @@ const About = () => {
     <div>
       <Navbar />
       <OtherHero
-        header={"Explore and connect with mentors across the world"}
+        header={"We are Africa’s first knowledge exchange platform"}
         image={"/images/hero/Group75.png"}
       />
       <AboutUs />

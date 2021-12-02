@@ -22,8 +22,10 @@ const Course = () => {
     <section id="course" className="course my-5 py-5">
       <div className="container">
         <div className="section-header fw-bold text-center">
-          <p className="fs-5 mb-2">OUR COURSES</p>
-          <h1 className="my-2 fw-bold">Appropriate Content Stays Here</h1>
+          <p className="fs-5 mb-2">UPSKILL</p>
+          <h1 className="my-2 fw-bold">
+            Give yourself a clear edge in the world of work.
+          </h1>
         </div>
 
         <div className="row my-5 justify-content-center align-items-center text-center">

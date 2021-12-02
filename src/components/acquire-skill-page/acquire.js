@@ -8,10 +8,8 @@ const Acquire = () => {
     <div>
       <Navbar />
       <OtherHero
-        header={
-          "Acquire cutting-edge skills that gives an advantage in the workplace"
-        }
-        image={"/images/hero/Group76.png"}
+        header={"Build globally relevant skills"}
+        image={"/images/hero/Group77.png"}
       />
       <AllCourses />
       <Footer />

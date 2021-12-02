@@ -13,13 +13,16 @@ const Mentors = () => {
               className="img-fluid"
             />
           </div>
-          <div className="col-12 col-lg-6 col-xl-4">
+          <div className="col-12 col-lg-6 col-xl-5">
             <div className="section-header fw-bold text-center text-lg-start w-100">
-              <p className="fs-5 my-2">OUR MENTORS</p>
-              <h1 className="my-2 fw-bold ">Appropriate Content Stays Here</h1>
+              <p className="fs-5 my-2">GET MENTORED</p>
+              <h1 className="my-2 fw-bold ">
+                {" "}
+                Find mentors who are the best in your field.
+              </h1>
               <p className="text fw-normal py-2 my-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's.
+                Our mentors are carefully selected from some of the brightest
+                and most accomplished Africans in the Diaspora.
               </p>
             </div>
             <div className="text-center text-lg-start">
@@ -31,7 +34,7 @@ const Mentors = () => {
               </Link>
             </div>
           </div>
-          <div className="col-12 col-lg-0 col-xl-2"></div>
+          <div className="col-12 col-lg-0 col-xl-1"></div>
         </div>
       </div>
     </section>

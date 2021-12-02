@@ -10,14 +10,14 @@ const OtherHero = (props) => {
 
       <div className="container">
         <div className="row align-items-center justify-content-center text-center text-md-start">
-          <div className="col-12 col-md-5 order-md-2">
+          <div className="col-12 col-md-6 order-md-2">
             <img
               src={props.image}
               alt="hero section visual describing current carousel"
               className="img-fluid p-5"
             />
           </div>
-          <div className="col-12 col-md-7 order-md-1">
+          <div className="col-12 col-md-6 order-md-1">
             <div className="hero-header">
               <h1 className="fw-bold mb-3">{props.header}</h1>
 

@@ -27,7 +27,7 @@ const AllCourses = () => {
       <div className="container">
         <div className="section-header fw-bold text-center">
           <p className="fs-5 mb-2">OUR COURSES</p>
-          <h1 className="my-2 fw-bold">Content Stays Here</h1>
+          <h1 className="my-2 fw-bold">Created by the brightest faculty</h1>
         </div>
 
         <div className="row my-5 justify-content-center align-items-center text-center">

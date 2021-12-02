@@ -9,7 +9,7 @@ const FindMentor = () => {
     <div>
       <Navbar />
       <OtherHero
-        header={"Explore and connect with mentors across the world"}
+        header={"Need a guide to facilitate your career progress?"}
         image={"/images/hero/Group76.png"}
       />
       <Mentors />

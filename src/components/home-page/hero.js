@@ -102,13 +102,13 @@ const Hero = () => {
                         typesetting industry. Lorem Ipsum has been the
                         industry's.
                       </p> */}
-                      <button
-                        to=""
-                        className="hero-btn btn px-4 px-md-5 py-3 my-4 mt-3"
+                      <a
+                        href="#course"
+                        className="hero-btn btn px-4 px-md-5 py-3 my-4 mt-3 text-decoration-none shadow-none"
                       >
                         {" "}
                         Learn More
-                      </button>
+                      </a>
                       <div className="hero-slider-controls my-3">
                         <i
                           className="fas fa-chevron-left p-3 me-3  position-relative"
@@ -152,13 +152,13 @@ const Hero = () => {
                         typesetting industry. Lorem Ipsum has been the
                         industry's.
                       </p> */}
-                      <button
-                        to=""
-                        className="hero-btn btn px-4 px-md-5 py-3 my-4 mt-3"
+                      <a
+                        href="/find_a_mentor"
+                        className="hero-btn btn px-4 px-md-5 py-3 my-4 mt-3 text-decoration-none shadow-none"
                       >
                         {" "}
-                        Learn More
-                      </button>
+                        Find a Mentor
+                      </a>
 
                       <div className="hero-slider-controls my-3">
                         <i
@@ -203,13 +203,13 @@ const Hero = () => {
                         typesetting industry. Lorem Ipsum has been the
                         industry's.
                       </p> */}
-                      <button
-                        to=""
-                        className="hero-btn btn px-4 px-md-5 py-3 my-4 mt-3"
+                      <a
+                        href="/acquire_a_skill"
+                        className="hero-btn btn px-4 px-md-5 py-3 my-4 mt-3 text-decoration-none shadow-none"
                       >
                         {" "}
-                        Learn More
-                      </button>
+                        Start Learning
+                      </a>
 
                       <div className="hero-slider-controls my-3">
                         <i

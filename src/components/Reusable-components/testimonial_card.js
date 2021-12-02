@@ -14,7 +14,7 @@ const TestimonialCard = (props) => {
         <div className="text-center my-3">
           <img
             src={props.image}
-            className="card-img-top img-fluid rounded-circle w-25"
+            className="card-img-top img-fluid rounded-circle w-25 mx-auto"
             alt="visual represntation for course"
           />
         </div>

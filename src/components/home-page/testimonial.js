@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TestimonialCard from "../Reusable-components/testimonial_card";
 
+import { bindActionCreators } from "redux";
+import { useDispatch, useSelector } from "react-redux";
+import { actionCreators } from "../../state";
+
 const Testimonial = () => {
+  const dispatch = useDispatch();
+  const { Testimonial } = bindActionCreators(actionCreators, dispatch);
+  useEffect(() => {
+    Testimonial();
+  }, []);
+  const state = useSelector((state) => state.TestimonialReducer);
+  let testi = state;
+  // console.log({ testi });
+
+  // if (state.data) {
+  //   testi = state.data.data;
+  // }
   return (
     <section id="testimonial" className="testimonial py-5 my-3">
       <div className="container">
@@ -9,6 +25,14 @@ const Testimonial = () => {
           <p className="fs-5 mb-2">TESTIMONIAL</p>
           <h1 className="my-2 fw-bold">What Our Students Say</h1>
         </div>
+        {/* {testi.map((item) => {
+          return (
+            <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
+              {" "}
+              <TestimonialCard image={item.image} />
+            </div>
+          );
+        })} */}
         <div
           id="carouselExampleControls1"
           class="carousel slide"

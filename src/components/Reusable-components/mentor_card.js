@@ -22,10 +22,11 @@ const MentorCard = (props) => {
             </div>
           </div>
           <p className="my-2 text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
+            {props.bio}
+            {/* Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's. It is a long
             established fact that a read will be distracted by the readable
-            content of a page when looking at its.
+            content of a page when looking at its. */}
           </p>
 
           <Link

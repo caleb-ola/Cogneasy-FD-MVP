@@ -21,13 +21,13 @@ const CourseCard = (props) => {
           </small>
         )}
 
-        <h3 className="fs-4 w-75 lh-1">Some Text Stays Here</h3>
-        <Link
-          to=""
+        <h3 className="fs-4 w-75 lh-1">{props.title}</h3>
+        <a
+          href={props.link}
           className="card-text course-card-link  text-decoration-none border-bottom border-3"
         >
           Start Now!
-        </Link>
+        </a>
       </div>
     </div>
   );

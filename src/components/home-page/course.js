@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import CourseCard from "../Reusable-components/course_card";
 
+import { bindActionCreators } from "redux";
+import { useDispatch, useSelector } from "react-redux";
+import { actionCreators } from "../../state";
 const Course = () => {
+  const dispatch = useDispatch();
+  const { Courses } = bindActionCreators(actionCreators, dispatch);
+  const state = useSelector((state) => state.CourseReducer);
+  // console.log({ state });
+  useEffect(() => {
+    Courses();
+  }, []);
+
+  let cous = "";
+  if (state.data) {
+    cous = state.data.data;
+  }
   return (
     <section id="course" className="course my-5 py-5">
       <div className="container">
@@ -10,19 +25,32 @@ const Course = () => {
           <p className="fs-5 mb-2">OUR COURSES</p>
           <h1 className="my-2 fw-bold">Appropriate Content Stays Here</h1>
         </div>
+
         <div className="row my-5 justify-content-center align-items-center text-center">
-          <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
-            {" "}
-            <CourseCard image={"/images/courses/course1.png"} />
-          </div>
-          <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
+          {state.data &&
+            cous.map((item) => {
+              return (
+                <div
+                  className="col-12 col-md-6 col-lg-4 px-5 my-4"
+                  key={item._id}
+                >
+                  {" "}
+                  <CourseCard
+                    image={item.image}
+                    title={item.title}
+                    link={item.link}
+                  />
+                </div>
+              );
+            })}
+          {/* <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
             {" "}
             <CourseCard image={"/images/courses/course2.png"} />
           </div>
           <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
             {" "}
             <CourseCard image={"/images/courses/course3.png"} />
-          </div>
+          </div> */}
         </div>
         <div className="text-center">
           <Link

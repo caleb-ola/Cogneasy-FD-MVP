@@ -93,8 +93,8 @@ const Hero = () => {
                   <div className="col-12 col-md-7 order-sm-1 ">
                     <div className="hero-header py-3">
                       <h1 className="fw-bold mb-3 w-100">
-                        Get mentored, <br />
-                        Get upskilled;
+                        Get mentored; <br />
+                        Get upskilled.
                       </h1>
 
                       {/* <p className="fs-6 fs-md-5 my-2 w-75 mx-auto mx-md-0 my-4">
@@ -103,7 +103,7 @@ const Hero = () => {
                         industry's.
                       </p> */}
                       <a
-                        href="#course"
+                        href="/about"
                         className="hero-btn btn px-4 px-md-5 py-3 my-4 mt-3 text-decoration-none shadow-none"
                       >
                         {" "}
@@ -195,7 +195,7 @@ const Hero = () => {
                   <div className="col-12 col-md-8 order-sm-1">
                     <div className="hero-header m-0 py-1 py-md-3">
                       <h1 className="fw-bold mb-3 w-100">
-                        Acquire cutting-edge skills that gives you an advantage.{" "}
+                        Acquire cutting-edge skills that gives you an advantage{" "}
                       </h1>
 
                       {/* <p className="fs-6 fs-md-5 my-2 w-75 mx-auto mx-md-0 my-4">

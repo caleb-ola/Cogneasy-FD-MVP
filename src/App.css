@@ -292,7 +292,7 @@ a.course-card-link:hover {
 
 #contact.contact .contact-container {
   background: #0640b4;
-  border-radius: 0 100px;
+  border-radius: 0 120px;
   width: 100%;
 }
 #contact.contact .contact-container .section-header h1,
@@ -303,7 +303,7 @@ a.course-card-link:hover {
   border: 2px solid #fff;
   background: #fff;
   color: #0640b4;
-  border-radius: 0 25px;
+  border-radius: 25px 0;
 }
 #contact.contact .contact-btn:hover {
   border: 2px solid #ff9e01;
@@ -346,6 +346,9 @@ a.course-card-link:hover {
 footer {
   background-color: #1b2124;
   color: #efefef;
+}
+footer .footer-headers a {
+  color: #fff;
 }
 footer .footer-text,
 footer a {

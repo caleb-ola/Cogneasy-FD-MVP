@@ -13,10 +13,18 @@ const Footer = () => {
       <div className="container py-3 py-lg-5">
         <div className="row">
           <div className="col-md-6 col-lg-4 col-sm-12 pe-0 pe-lg-5 ">
-            <div className="footer-headers  fw-bold fs-2 py-3 ">Cogneasy</div>
+            <div className="footer-headers  fw-bold fs-2 py-3 ">
+              {" "}
+              <Link to="/" className="navbar-brand fw-bold fs-2">
+                <img
+                  src="/images/logo/Frame.png"
+                  alt="Cogneasy's header logo"
+                  className="img-fluid"
+                />
+              </Link>
+            </div>
             <div className="footer-text w-100 ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's.
+              Remitting Productive Knowledge to Africans on the Continent.
             </div>
           </div>
           <div className="col-md-6 col-lg-2 col-sm-12">
@@ -42,7 +50,9 @@ const Footer = () => {
           </div>
           <div className="col-md-6 col-lg-2 col-sm-12">
             <div className="footer-headers fs-5 fw-bold py-4 pb-2 pb-md-3">
-              Courses
+              <a href="/acquire_a_skill" className="text-decoration-none">
+                Courses
+              </a>
             </div>
             <div className="footer-links">
               <div className="footer-text py-2">
@@ -64,45 +74,48 @@ const Footer = () => {
           </div>
           <div className="col-md-6 col-lg-4 col-sm-12">
             <div className="footer-headers fs-5 fw-bold py-4 pb-2 pb-md-4">
-              Contact Us
+              <a href="/contact" className="text-decoration-none">
+                Contact Us
+              </a>
             </div>
             <div className="footer-text">
-              Addres stays here and may take two lines
+              50, Ogbomoso-Ilorin Rd, General Area, Ogbomoso{" "}
             </div>
             <div className="footer-buttons">
-              <div className="row d-inline-block py-3 fs-6 my-3">
+              <div className="row d-inline-block py-3 fs-6 my-3 my-md-4">
                 <a
-                  href=""
+                  href="https://web.facebook.com/officialcogneasy"
                   className="text-decoration-none"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fab fs-4 fa-facebook-square d-inline mx-1 p-2 rounded-circle"></i>
+                  <i className="fab fs-4 fa-facebook d-inline mx-1 p-2 p-xl-3 rounded-circle"></i>
                 </a>
                 <a
-                  href=""
+                  href="https://www.instagram.com/cogneasy/"
                   className="text-decoration-none"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fab fs-4 fa-instagram d-inline mx-1 p-2 rounded-circle"></i>
+                  <i className="fab fs-4 fa-instagram d-inline mx-1 p-2 p-xl-3 rounded-circle"></i>
                 </a>
+
                 <a
-                  href=""
-                  className="text-decoration-none"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fab fs-4 fa-twitter d-inline mx-1 p-2 rounded-circle"></i>
-                </a>
-                <a
-                  href=""
+                  href=" https://www.linkedin.com/company/cogneasy/"
                   className="text-decoration-none"
                   target="_blank"
                   rel="noreferrer"
                 >
                   {" "}
-                  <i className="fab fs-4 fa-linkedin d-inline mx-1 p-2 rounded-circle"></i>
+                  <i className="fab fs-4 fa-linkedin-in d-inline mx-1 p-2 p-xl-3 rounded-circle"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UC3KTjDl-l5tD6GcknkOlkzA"
+                  className="text-decoration-none"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fs-4 fa-youtube-square d-inline mx-1 p-2 p-xl-3 rounded-circle"></i>
                 </a>
               </div>
             </div>

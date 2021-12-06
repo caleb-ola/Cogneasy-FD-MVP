@@ -13,7 +13,11 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light py-4">
         <div className="container">
           <Link to="/" className="navbar-brand fw-bold fs-2">
-            Cogneasy
+            <img
+              src="/images/logo/Group82.png"
+              alt="Cogneasy's header logo"
+              className="img-fluid"
+            />
           </Link>
           {/* <button
             className="navbar-toggler"

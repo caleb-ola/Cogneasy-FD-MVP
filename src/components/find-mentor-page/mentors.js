@@ -14,7 +14,7 @@ const Mentors = () => {
   useEffect(() => {
     Mentors();
     // const ment = state.data.data;
-  }, []);
+  }, [Mentors]);
   let ment = "";
   if (state.data) {
     ment = state.data.data;

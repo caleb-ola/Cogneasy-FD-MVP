@@ -12,7 +12,7 @@ const Course = () => {
   // console.log({ state });
   useEffect(() => {
     Courses();
-  }, []);
+  }, [Courses]);
 
   let cous = "";
   if (state.data) {

@@ -15,7 +15,7 @@ const Testimonial = () => {
   const { Testimonial } = bindActionCreators(actionCreators, dispatch);
   useEffect(() => {
     Testimonial();
-  }, []);
+  }, [Testimonial]);
   // const state = useSelector((state) => state.TestimonialReducer);
   // let testi = state;
   // console.log({ testi });

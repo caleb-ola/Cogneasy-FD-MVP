@@ -15,7 +15,7 @@ const AllCourses = () => {
 
   useEffect(() => {
     Courses();
-  }, []);
+  }, [Courses]);
 
   let cous = "";
   if (state.data) {

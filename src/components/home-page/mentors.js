@@ -25,14 +25,14 @@ const Mentors = () => {
                 and most accomplished Africans in the Diaspora.
               </p>
             </div>
-            <div className="text-center text-lg-start">
+            {/* <div className="text-center text-lg-start">
               <Link
                 to="/find_a_mentor"
                 className="btn course-btn px-4 px-md-5 py-3 my-3 shadow-none"
               >
                 Find a Mentor
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="col-12 col-lg-0 col-xl-1"></div>
         </div>

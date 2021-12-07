@@ -229,14 +229,14 @@ a.course-card-link:hover {
   color: #ff9e01 !important;
   border-color: #ff9e01 !important;
 }
-.course-btn {
+.course-btn:hover {
   border: 2px solid #0640b4;
   background: #fff;
   color: #0640b4;
   border-radius: 0 30px;
 }
 
-.course-btn:hover {
+.course-btn {
   border: 2px solid #0640b4;
   background: #0640b4;
   color: #fff;
@@ -288,7 +288,7 @@ a.course-card-link:hover {
 #testimonial.testimonial .testifier-card-text {
   color: #1b2124;
 }
-/*----------------------------- TESTIMONIAL SECTION (HOME) -------------------------------- */
+/*----------------------------- CONTACT SECTION (HOME) -------------------------------- */
 
 #contact.contact .contact-container {
   background: #0640b4;
@@ -309,7 +309,7 @@ a.course-card-link:hover {
   border: 2px solid #ff9e01;
   background: #ff9e01;
   color: #fff;
-  border-radius: 0 25px;
+  border-radius: 25px 0;
 }
 /*----------------------------- TEAM SECTION (ABOUT US) -------------------------------- */
 .team-card {
@@ -320,6 +320,7 @@ a.course-card-link:hover {
 .mentor-card {
   border-radius: 30px 0px 30px 30px;
   box-shadow: 0px 8px 30px 0px #0640b41f;
+  height: 700px;
 }
 .mentor-role {
   color: #1b212483;
@@ -362,13 +363,45 @@ footer a:hover {
 footer i {
   color: #ffffff;
   background: #ff9e01;
+
+  /* padding: 30px; */
 }
 footer i:hover {
   color: #0640b4;
   background: #fff;
 }
+footer .social-icon-bg {
+  width: 1rem;
+  height: 1rem;
+  background-color: #0640b4;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+}
+.custom .fa-circle:before {
+  border-radius: 50%;
+  /* background: linear-gradient(red, blue); */
+  /* color: #ffffff; */
+  background: #ff9e01;
+  color: transparent;
+}
+footer .social-icon-link {
+  background-color: #b47706;
+  /* padding: 10px; */
+  /* border-radius: 5; */
+}
 .waves {
   display: none;
+}
+/* MENTORS CARD */
+.mentor-card-one {
+  box-shadow: 0px 10px 25px 0px #1b212426;
+  border: 0;
+  border-radius: 0px 50px 50px 50px;
 }
 
 /*----------------------------- MEDIA QUERIES-------------------------------- */
@@ -398,11 +431,19 @@ footer i:hover {
   #contact.contact .contact-container {
     width: 100%;
   }
+  .mentor-card {
+    border-radius: 30px 0px 30px 30px;
+    box-shadow: 0px 8px 30px 0px #0640b41f;
+    height: 530px;
+  }
 }
 @media only screen and (min-width: 1024px) {
+  .hero-header-home h1 {
+    font-size: 4rem;
+    /* height: 290px; */
+  }
   .hero-header h1 {
     font-size: 4rem;
-    height: 290px;
   }
   .hero-header h1.contact-details-header {
     font-size: 4rem;
@@ -422,6 +463,11 @@ footer i:hover {
   }
   #contact.contact .contact-container {
     width: 80%;
+  }
+  .mentor-card {
+    border-radius: 30px 0px 30px 30px;
+    box-shadow: 0px 8px 30px 0px #0640b41f;
+    height: 620px;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -450,5 +496,10 @@ footer i:hover {
   }
   #contact.contact .contact-container {
     width: 80%;
+  }
+  .mentor-card {
+    border-radius: 30px 0px 30px 30px;
+    box-shadow: 0px 8px 30px 0px #0640b41f;
+    height: 560px;
   }
 }

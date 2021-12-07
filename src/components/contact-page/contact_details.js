@@ -6,16 +6,16 @@ const ContactDetails = () => {
       id="contact-details"
       className="contact-details py-5 position-relative"
     >
-      <img
+      {/* <img
         src="/images/shapes/topWave.png"
         alt="abstract shape"
         className="img-fluid position-absolute waves"
         style={{ left: "0", top: "5%", zIndex: "-1" }}
-      />
+      /> */}
       <div className="container">
         <div
           className="hero-header mx-auto pt-4 my-5  text-center"
-          style={{ height: "40vh" }}
+          style={{ height: "30vh" }}
         >
           <h1 className="fw-bold p-0 my-3 mt-5 pt-5 my-md-2 contact-details-header">
             Contact Us
@@ -27,7 +27,7 @@ const ContactDetails = () => {
             </p>
           </div> */}
         </div>
-        <div className="contacts my-5 pt-md-5" style={{ height: "60vh" }}>
+        <div className="contacts my-5 pt-md-5" style={{ height: "30vh" }}>
           <div className="row text-center pt-2 pt-md-3 justify-content-center align-items-center">
             <div className="col-12 col-md-6 col-lg-4 my-2">
               <h2 className="fw-bold my-2 my-lg-3">CALL</h2>
@@ -41,7 +41,7 @@ const ContactDetails = () => {
             </div>
             <div className="col-12 col-md-6 col-lg-4 my-2">
               <h2 className="fw-bold my-2 my-lg-3">EMAIL</h2>
-              <p className="">hello@cogneasy.com</p>
+              <p className="">admin@cogneasy.com</p>
             </div>
           </div>
         </div>

@@ -50,9 +50,14 @@ const Contact = () => {
               industry. Lorem Ipsum has been the industry's. mply dummy text of
               the printing and typeset
             </p>
-            <button className="btn contact-btn shadow-none px-5 py-3 my-3 shadow-none">
+            <a
+              target="_blank"
+              rel="noreferer"
+              href="https://forms.gle/qiXsKEtpKnQvemJB9"
+              className="btn contact-btn shadow-none px-5 py-3 my-3 shadow-none"
+            >
               Sign Up
-            </button>
+            </a>
           </div>
         </div>
       </div>

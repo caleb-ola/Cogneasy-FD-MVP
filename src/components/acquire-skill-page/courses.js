@@ -31,7 +31,7 @@ const AllCourses = () => {
         </div>
 
         <div className="row my-5 justify-content-center align-items-center text-center">
-          {state.data &&
+          {/* {state.data &&
             cous.map((item) => {
               return (
                 <div
@@ -47,7 +47,30 @@ const AllCourses = () => {
                   />
                 </div>
               );
-            })}
+            })} */}
+
+          <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
+            {" "}
+            <CourseCard
+              image={"/images/courses/course6.png"}
+              title={"Communicate Like A Pro"}
+            />
+          </div>
+          <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
+            {" "}
+            <CourseCard
+              image={"/images/courses/course5.png"}
+              title={"Breaking the Einstein Code"}
+            />
+          </div>
+          <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
+            {" "}
+            <CourseCard
+              image={"/images/courses/course4.png"}
+              title={"Mapping Your Business Idea"}
+            />
+          </div>
+
           {/* <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
             {" "}
             <CourseCard image={"/images/course-image.png"} />

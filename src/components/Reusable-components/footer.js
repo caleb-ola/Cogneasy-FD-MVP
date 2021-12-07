@@ -12,7 +12,7 @@ const Footer = () => {
       />
       <div className="container py-3 py-lg-5">
         <div className="row">
-          <div className="col-md-6 col-lg-4 col-sm-12 pe-0 pe-lg-5 ">
+          <div className="col-md-6 col-lg-5 col-sm-12 pe-0 pe-lg-5 ">
             <div className="footer-headers  fw-bold fs-2 py-3 ">
               {" "}
               <Link to="/" className="navbar-brand fw-bold fs-2">
@@ -27,28 +27,34 @@ const Footer = () => {
               Remitting Productive Knowledge to Africans on the Continent.
             </div>
           </div>
-          <div className="col-md-6 col-lg-2 col-sm-12">
+          <div className="col-md-6 col-lg-3 col-sm-12">
             <div className="footer-headers fs-5 fw-bold py-4 pb-2 pb-md-3 ">
               Quick Links
             </div>
             <div className="footer-text py-2">
-              <Link to="" className="footer-link text-decoration-none">
+              <Link to="/about" className="footer-link text-decoration-none">
                 About Us
               </Link>
             </div>
             <div className="footer-text py-2">
               {" "}
-              <Link to="" className="footer-link text-decoration-none">
+              <Link
+                to="/find_a_mentor"
+                className="footer-link text-decoration-none"
+              >
                 Find a Mentor
               </Link>
             </div>
             <div className="footer-text py-2">
-              <Link to="" className="footer-link text-decoration-none">
+              <Link
+                to="/acquire_a_skill"
+                className="footer-link text-decoration-none"
+              >
                 Acquire a Skill
               </Link>
             </div>
           </div>
-          <div className="col-md-6 col-lg-2 col-sm-12">
+          {/* <div className="col-md-6 col-lg-2 col-sm-12">
             <div className="footer-headers fs-5 fw-bold py-4 pb-2 pb-md-3">
               <a href="/acquire_a_skill" className="text-decoration-none">
                 Courses
@@ -71,7 +77,7 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="col-md-6 col-lg-4 col-sm-12">
             <div className="footer-headers fs-5 fw-bold py-4 pb-2 pb-md-4">
               <a href="/contact" className="text-decoration-none">
@@ -97,7 +103,9 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fab fs-4 fa-instagram d-inline mx-1 p-2 p-xl-3 rounded-circle"></i>
+                  {/* <div className="social-icon-bg d-inline p-3"> */}
+                  <i className="fab fs-4 fa-instagram d-inline mx-1 p-3 rounded-circle"></i>
+                  {/* </div> */}
                 </a>
 
                 <a

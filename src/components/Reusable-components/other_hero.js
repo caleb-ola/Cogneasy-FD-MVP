@@ -19,7 +19,7 @@ const OtherHero = (props) => {
           </div>
           <div className="col-12 col-md-6 order-md-1">
             <div className="hero-header">
-              <h1 className="fw-bold mb-3">{props.header}</h1>
+              <h1 className="fw-bold mb-5">{props.header}</h1>
 
               {/* <p className="fs-6 fs-md-5 my-2 w-75 mx-auto mx-md-0">
                 Lorem Ipsum is simply dummy text of the printing and typesetting

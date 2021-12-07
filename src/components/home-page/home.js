@@ -9,6 +9,7 @@ import Course from "./course";
 import Mentors from "./mentors";
 import Testimonial from "./testimonial";
 import Contact from "./contact";
+import MeetMentors from "./meet_mentors";
 
 const Home = () => {
   return (
@@ -18,7 +19,8 @@ const Home = () => {
       <Counter />
       <Course />
       <Mentors />
-      <Testimonial />
+      <MeetMentors />
+      {/* <Testimonial /> */}
       <Contact />
       <Footer />
     </div>

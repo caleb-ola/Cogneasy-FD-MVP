@@ -30,7 +30,7 @@ const Hero = () => {
                     />
                   </div>
                   <div className="col-12 col-md-7 order-sm-1 ">
-                    <div className="hero-header py-3">
+                    <div className="hero-header-home hero-header py-3">
                       <h1 className="fw-bold mb-3 w-100">
                         Get mentored; <br />
                         Get upskilled.
@@ -66,15 +66,15 @@ const Hero = () => {
             <section id="hero-section" className="hero-section py-3">
               <div className="container">
                 <div className="row align-items-center justify-content-center text-center text-md-start">
-                  <div className="col-12 col-md-4 order-sm-2">
+                  <div className="col-12 col-md-5 order-sm-2">
                     <img
                       src="/images/hero/Group73.png"
                       alt="hero section visual describing current carousel"
                       className="img-fluid p-5 p-md-0 hero-image w-100"
                     />
                   </div>
-                  <div className="col-12 col-md-8 order-sm-1">
-                    <div className="hero-header m-0 py-1 py-md-3">
+                  <div className="col-12 col-md-7 order-sm-1">
+                    <div className="hero-header-home hero-header m-0 py-1 py-md-3">
                       <h1 className="fw-bold mb-3 w-100">
                         Explore and connect with mentors across the world
                       </h1>
@@ -110,15 +110,15 @@ const Hero = () => {
             <section id="hero-section" className="hero-section py-3">
               <div className="container">
                 <div className="row align-items-center justify-content-center text-center text-md-start">
-                  <div className="col-12 col-md-4 order-sm-2">
+                  <div className="col-12 col-md-5 order-sm-2">
                     <img
                       src="/images/hero/Group74.png"
                       alt="hero section visual describing current carousel"
                       className="img-fluid p-5 p-md-0 hero-image w-100"
                     />
                   </div>
-                  <div className="col-12 col-md-8 order-sm-1">
-                    <div className="hero-header m-0 py-1 py-md-3">
+                  <div className="col-12 col-md-7 order-sm-1">
+                    <div className="hero-header-home hero-header m-0 py-1 py-md-3">
                       <h1 className="fw-bold mb-3 w-100">
                         Acquire cutting-edge skills that gives you an advantage{" "}
                       </h1>

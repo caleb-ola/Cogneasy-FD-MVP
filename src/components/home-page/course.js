@@ -28,8 +28,8 @@ const Course = () => {
           </h1>
         </div>
 
-        <div className="row my-5 justify-content-center align-items-center text-center">
-          {state.data &&
+        <div className="row my-4 mt-5 justify-content-center align-items-center text-center">
+          {/* {state.data &&
             cous.map((item) => {
               return (
                 <div
@@ -44,20 +44,33 @@ const Course = () => {
                   />
                 </div>
               );
-            })}
-          {/* <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
+            })} */}
+          <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
             {" "}
-            <CourseCard image={"/images/courses/course2.png"} />
+            <CourseCard
+              image={"/images/courses/course6.png"}
+              title={"Communicate Like A Pro"}
+            />
           </div>
           <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
             {" "}
-            <CourseCard image={"/images/courses/course3.png"} />
-          </div> */}
+            <CourseCard
+              image={"/images/courses/course5.png"}
+              title={"Breaking the Einstein Code"}
+            />
+          </div>
+          <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
+            {" "}
+            <CourseCard
+              image={"/images/courses/course4.png"}
+              title={"Mapping Your Business Idea"}
+            />
+          </div>
         </div>
         <div className="text-center">
           <Link
             to="/acquire_a_skill"
-            className="btn course-btn px-4 px-md-5 py-3 my-2 shadow-none"
+            className="btn course-btn px-4 px-md-5 py-3  shadow-none"
           >
             View All
           </Link>

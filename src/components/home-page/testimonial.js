@@ -6,7 +6,7 @@ import Slider from "react-slick";
 // import "slick-carousel/slick/slick-theme.css";
 
 import { bindActionCreators } from "redux";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { actionCreators } from "../../state";
 
 const Testimonial = () => {
@@ -16,8 +16,8 @@ const Testimonial = () => {
   useEffect(() => {
     Testimonial();
   }, []);
-  const state = useSelector((state) => state.TestimonialReducer);
-  let testi = state;
+  // const state = useSelector((state) => state.TestimonialReducer);
+  // let testi = state;
   // console.log({ testi });
 
   // if (state.data) {

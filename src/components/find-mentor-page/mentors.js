@@ -10,7 +10,7 @@ const Mentors = () => {
   const dispatch = useDispatch();
   const { Mentors } = bindActionCreators(actionCreators, dispatch);
   const state = useSelector((state) => state.MentorReducer);
-  console.log({ state: state.data });
+  // console.log({ state: state.data });
   useEffect(() => {
     Mentors();
     // const ment = state.data.data;

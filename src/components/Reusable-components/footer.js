@@ -24,7 +24,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className="footer-text w-100 ">
-              Remitting Productive Knowledge to Africans on the Continent.
+              Seamless knowledge remittance for Africans by Africans.{" "}
             </div>
           </div>
           <div className="col-md-6 col-lg-3 col-sm-12">

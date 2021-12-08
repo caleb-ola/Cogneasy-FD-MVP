@@ -4,7 +4,7 @@ import MentorCard from "../Reusable-components/mentor_card";
 // REDUX
 import { bindActionCreators } from "redux";
 import { actionCreators } from "../../state";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 // TOASTIFY
 import { ToastContainer, toast } from "react-toastify";
@@ -13,16 +13,16 @@ import "react-toastify/dist/ReactToastify.css";
 const Mentors = () => {
   const dispatch = useDispatch();
   const { Mentors } = bindActionCreators(actionCreators, dispatch);
-  const state = useSelector((state) => state.MentorReducer);
+  // const state = useSelector((state) => state.MentorReducer);
   // console.log({ state: state.data });
   useEffect(() => {
     Mentors();
     // const ment = state.data.data;
   }, [Mentors]);
-  let ment = "";
-  if (state.data) {
-    ment = state.data.data;
-  }
+  // let ment = "";
+  // if (state.data) {
+  //   ment = state.data.data;
+  // }
   const [name, setName] = useState("");
   const [MentorName, setMentorName] = useState("");
   const [email, setEmail] = useState("");
@@ -104,17 +104,17 @@ const Mentors = () => {
       </button> */}
 
       <div
-        class="modal fade  py-4"
+        className="modal fade  py-4"
         id="exampleModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered py-4">
-          <div class="modal-content">
-            <div class="modal-header">
+        <div className="modal-dialog modal-dialog-centered py-4">
+          <div className="modal-content">
+            <div className="modal-header">
               <h3
-                class="modal-title"
+                className="modal-title"
                 id="exampleModalLabel"
                 className="fw-bold"
               >
@@ -122,12 +122,12 @@ const Mentors = () => {
               </h3>
               <button
                 type="button"
-                class="btn-close shadow-none"
+                className="btn-close shadow-none"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
               <form onSubmit={handleSubmit}>
                 <div className="input-field my-3">
                   <label htmlFor="name" className="fw-bold py-2">
@@ -171,19 +171,7 @@ const Mentors = () => {
                   ></textarea>
                 </div>
                 {/* <div className="input-field"></div> */}
-                <input
-                  type="hidden"
-                  placeholder="E.g johndoe@gmail.com"
-                  className="email w-100 p-3"
-                  // value={}
-                  id="email"
-                />
-                <input
-                  type="hidden"
-                  placeholder="E.g johndoe@gmail.com"
-                  className="email w-100 p-3"
-                  id="email"
-                />
+
                 <button
                   type="submit"
                   className="btn course-btn px-3 px-md-5 py-2  my-3 shadow-none"

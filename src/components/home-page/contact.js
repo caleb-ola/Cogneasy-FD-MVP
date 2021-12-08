@@ -52,7 +52,7 @@ const Contact = () => {
             </p>
             <a
               target="_blank"
-              rel="noreferer"
+              rel="noreferrer"
               href="https://forms.gle/qiXsKEtpKnQvemJB9"
               className="btn contact-btn shadow-none px-5 py-3 my-3 shadow-none"
             >

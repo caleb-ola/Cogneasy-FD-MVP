@@ -3,13 +3,13 @@ import CourseCard from "../Reusable-components/course_card";
 
 // REDUX
 import { bindActionCreators } from "redux";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { actionCreators } from "../../state";
 
 const AllCourses = () => {
   const dispatch = useDispatch();
   const { Courses } = bindActionCreators(actionCreators, dispatch);
-  const state = useSelector((state) => state.CourseReducer);
+  // const state = useSelector((state) => state.CourseReducer);
 
   // console.log(state);
 
@@ -17,10 +17,10 @@ const AllCourses = () => {
     Courses();
   }, [Courses]);
 
-  let cous = "";
-  if (state.data) {
-    cous = state.data.data;
-  }
+  // let cous = "";
+  // if (state.data) {
+  //   cous = state.data.data;
+  // }
 
   return (
     <section id="all-courses" className="all-courses my-4 my-md-5 py-md-3">

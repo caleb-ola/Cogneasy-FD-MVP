@@ -53,7 +53,7 @@ const Hero = () => {
                             data-bs-target="#carouselExampleControls"
                             data-bs-slide="prev"
                           >
-                            <a href="#">
+                            <a href="/">
                               <i className="fas fa-chevron-left fa-lg  position-relative"></i>{" "}
                             </a>
                           </li>
@@ -62,7 +62,7 @@ const Hero = () => {
                             data-bs-target="#carouselExampleControls"
                             data-bs-slide="next"
                           >
-                            <a href="#">
+                            <a href="/">
                               <i
                                 className="fas fa-chevron-right fa-lg  rounded-circle "
                                 type="button"
@@ -111,7 +111,7 @@ const Hero = () => {
                             data-bs-target="#carouselExampleControls"
                             data-bs-slide="prev"
                           >
-                            <a href="#">
+                            <a href="/">
                               <i className="fas fa-chevron-left fa-lg  position-relative"></i>{" "}
                             </a>
                           </li>
@@ -120,7 +120,7 @@ const Hero = () => {
                             data-bs-target="#carouselExampleControls"
                             data-bs-slide="next"
                           >
-                            <a href="#">
+                            <a href="/">
                               <i
                                 className="fas fa-chevron-right fa-lg  rounded-circle "
                                 type="button"
@@ -167,7 +167,7 @@ const Hero = () => {
                             data-bs-target="#carouselExampleControls"
                             data-bs-slide="prev"
                           >
-                            <a href="#">
+                            <a href="/">
                               <i className="fas fa-chevron-left fa-lg  position-relative"></i>{" "}
                             </a>
                           </li>
@@ -176,7 +176,7 @@ const Hero = () => {
                             data-bs-target="#carouselExampleControls"
                             data-bs-slide="next"
                           >
-                            <a href="#">
+                            <a href="/">
                               <i
                                 className="fas fa-chevron-right fa-lg  rounded-circle "
                                 type="button"

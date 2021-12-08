@@ -84,9 +84,7 @@ const Footer = () => {
                 Contact Us
               </a>
             </div>
-            <div className="footer-text">
-              50, Ogbomoso-Ilorin Rd, General Area, Ogbomoso{" "}
-            </div>
+            <div className="footer-text">admin@cogneasy.com </div>
             <div className="footer-buttons text-start w-100">
               <div className="icon-cirlce py-3 fs-6 my-3 my-md-4 w-100">
                 <ul className="p-0 w-100 ml-0 text-center text-md-start">
@@ -116,7 +114,7 @@ const Footer = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i class="fab fa-linkedin-in d-inline fa-lg"></i>
+                      <i className="fab fa-linkedin-in d-inline fa-lg"></i>
                     </a>
                   </li>
                   <li className="mx-3">

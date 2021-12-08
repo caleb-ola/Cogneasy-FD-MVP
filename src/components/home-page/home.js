@@ -7,7 +7,7 @@ import Footer from "../Reusable-components/footer";
 import Counter from "./counter";
 import Course from "./course";
 import Mentors from "./mentors";
-import Testimonial from "./testimonial";
+// import Testimonial from "./testimonial";
 import Contact from "./contact";
 import MeetMentors from "./meet_mentors";
 

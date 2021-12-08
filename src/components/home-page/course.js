@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 import CourseCard from "../Reusable-components/course_card";
 
 import { bindActionCreators } from "redux";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { actionCreators } from "../../state";
 const Course = () => {
   const dispatch = useDispatch();
   const { Courses } = bindActionCreators(actionCreators, dispatch);
-  const state = useSelector((state) => state.CourseReducer);
+  // const state = useSelector((state) => state.CourseReducer);
   // console.log({ state });
   useEffect(() => {
     Courses();
   }, [Courses]);
 
-  let cous = "";
-  if (state.data) {
-    cous = state.data.data;
-  }
+  // let cous = "";
+  // if (state.data) {
+  //   cous = state.data.data;
+  // }
   return (
     <section id="course" className="course my-5 py-5">
       <div className="container">

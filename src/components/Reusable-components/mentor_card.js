@@ -7,14 +7,14 @@ const MentorCard = (props) => {
       <div className="card-body py-3 py-md-4 px-3 px-lg-4 position-relative">
         <div className="">
           <div className="row justify-content-center align-items-center align-content-center my-3">
-            <div className="col-12 col-md-4 text-center text-md-left">
+            <div className="col-12 col-md-3 text-center text-md-start">
               <img
                 src={props.image}
                 className="img-fluid"
                 alt="visual represntation for course"
               />
             </div>
-            <div className="col-12 col-md-8 text-center text-md-left align-self-center py-3">
+            <div className="col-12 col-md-9 text-center text-md-start align-self-center py-3">
               <h3 className="fs-3 fw-bold lh-1 my-2 mentor-name">
                 {props.name}
               </h3>

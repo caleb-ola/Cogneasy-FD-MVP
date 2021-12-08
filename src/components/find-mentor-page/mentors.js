@@ -112,16 +112,12 @@ const Mentors = () => {
       >
         <div className="modal-dialog modal-dialog-centered py-4">
           <div className="modal-content">
-            <div className="modal-header">
-              <h3
-                className="modal-title"
-                id="exampleModalLabel"
-                className="fw-bold"
-              >
+            <div className="modal-header border-0 mt-4">
+              <h3 className="modal-title px-3 fw-bold" id="exampleModalLabel">
                 Fill in the information below
               </h3>
               <button
-                type="button"
+                // type="button"
                 className="btn-close shadow-none"
                 data-bs-dismiss="modal"
                 aria-label="Close"
@@ -132,6 +128,7 @@ const Mentors = () => {
                 <div className="input-field my-3">
                   <label htmlFor="name" className="fw-bold py-2">
                     Full Name
+                    <span className="asteric">*</span>
                   </label>
                   <br />
                   <input
@@ -140,12 +137,14 @@ const Mentors = () => {
                     className="name w-100 p-3"
                     onChange={(e) => setName(e.target.value)}
                     id="name"
+                    required
                   />
                 </div>
                 <div className="input-field my-3">
                   <label htmlFor="email" className="fw-bold py-2">
                     {" "}
                     Email Address
+                    <span className="asteric">*</span>
                   </label>
                   <br />
                   <input
@@ -154,11 +153,13 @@ const Mentors = () => {
                     placeholder="E.g johndoe@gmail.com"
                     className="email w-100 p-3"
                     id="email"
+                    required
                   />
                 </div>
                 <div className="input-field my-3">
                   <label htmlFor="text" className="fw-bold py-2">
                     Why do you want to be mentored
+                    <span className="asteric">*</span>
                   </label>
                   <br />
                   <textarea
@@ -168,13 +169,14 @@ const Mentors = () => {
                     style={{ height: "200px" }}
                     placeholder="Pitch yourself in 100 words to the mentor"
                     onChange={(e) => setPitch(e.target.value)}
+                    required
                   ></textarea>
                 </div>
                 {/* <div className="input-field"></div> */}
 
                 <button
                   type="submit"
-                  className="btn course-btn px-3 px-md-5 py-2  my-3 shadow-none"
+                  className="btn course-btn px-3 px-md-5 py-2  my-3 mb-4 shadow-none"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 >

@@ -4,7 +4,7 @@ const MentorCard = (props) => {
   return (
     <div>
       <div className="card mentor-card-one  text-start">
-        <div className="card-body py-4 py-md-5 px-3 px-lg-4 text-center">
+        <div className="card-body py-4 py-md-5 px-3 px-lg-4 text-center ">
           <div className="text-center my-3">
             <img
               src={props.image}

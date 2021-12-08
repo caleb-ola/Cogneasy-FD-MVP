@@ -45,25 +45,28 @@ const Course = () => {
                 </div>
               );
             })} */}
-          <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
+          <div className="col-12 col-md-6 col-xl-4 px-5 my-4">
             {" "}
             <CourseCard
               image={"/images/courses/course6.png"}
               title={"Communicate Like A Pro"}
+              label={"Available"}
             />
           </div>
-          <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
+          <div className="col-12 col-md-6 col-xl-4 px-5 my-4">
             {" "}
             <CourseCard
               image={"/images/courses/course5.png"}
               title={"Breaking the Einstein Code"}
+              label={"Available"}
             />
           </div>
-          <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
+          <div className="col-12 col-md-6 col-xl-4 px-5 my-4">
             {" "}
             <CourseCard
               image={"/images/courses/course4.png"}
               title={"Mapping Your Business Idea"}
+              label={"Available"}
             />
           </div>
         </div>

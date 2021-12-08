@@ -43,19 +43,36 @@ const Hero = () => {
                         {" "}
                         Learn More
                       </a>
-                      <div className="hero-slider-controls my-3">
-                        <i
-                          className="fas fa-chevron-left p-3 me-3  position-relative"
-                          data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev"
-                        ></i>
-                        <i
-                          className="fas fa-chevron-right p-3 ms-3 rounded-circle "
-                          type="button"
-                          data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next"
-                        ></i>
+
+                      {/*  */}
+
+                      <div className="icon-cirlce hero-slider-controls m-0 my-3">
+                        <ul className=" p-0">
+                          <li
+                            className="me-3"
+                            data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev"
+                          >
+                            <a href="#">
+                              <i className="fas fa-chevron-left fa-lg  position-relative"></i>{" "}
+                            </a>
+                          </li>
+                          <li
+                            className="ms-3"
+                            data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next"
+                          >
+                            <a href="#">
+                              <i
+                                className="fas fa-chevron-right fa-lg  rounded-circle "
+                                type="button"
+                              ></i>{" "}
+                            </a>
+                          </li>
+                        </ul>
                       </div>
+
+                      {/*  */}
                     </div>
                   </div>
                 </div>
@@ -87,18 +104,30 @@ const Hero = () => {
                         Find a Mentor
                       </a>
 
-                      <div className="hero-slider-controls my-3">
-                        <i
-                          className="fas fa-chevron-left p-3 me-3  position-relative"
-                          data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev"
-                        ></i>
-                        <i
-                          className="fas fa-chevron-right p-3 ms-3 rounded-circle "
-                          type="button"
-                          data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next"
-                        ></i>
+                      <div className="icon-cirlce hero-slider-controls m-0 my-3">
+                        <ul className=" p-0">
+                          <li
+                            className="me-3"
+                            data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev"
+                          >
+                            <a href="#">
+                              <i className="fas fa-chevron-left fa-lg  position-relative"></i>{" "}
+                            </a>
+                          </li>
+                          <li
+                            className="ms-3"
+                            data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next"
+                          >
+                            <a href="#">
+                              <i
+                                className="fas fa-chevron-right fa-lg  rounded-circle "
+                                type="button"
+                              ></i>{" "}
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -131,20 +160,30 @@ const Hero = () => {
                         Start Learning
                       </a>
 
-                      <div className="hero-slider-controls my-3">
-                        <i
-                          className="fas fa-chevron-left p-3 me-3  position-relative"
-                          data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev"
-                        >
-                          {/* <span class="visually-hidden">Previous</span> */}
-                        </i>
-                        <i
-                          className="fas fa-chevron-right p-3 ms-3 rounded-circle "
-                          type="button"
-                          data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next"
-                        ></i>
+                      <div className="icon-cirlce hero-slider-controls m-0 my-3">
+                        <ul className=" p-0">
+                          <li
+                            className="me-3"
+                            data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev"
+                          >
+                            <a href="#">
+                              <i className="fas fa-chevron-left fa-lg  position-relative"></i>{" "}
+                            </a>
+                          </li>
+                          <li
+                            className="ms-3"
+                            data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next"
+                          >
+                            <a href="#">
+                              <i
+                                className="fas fa-chevron-right fa-lg  rounded-circle "
+                                type="button"
+                              ></i>{" "}
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>

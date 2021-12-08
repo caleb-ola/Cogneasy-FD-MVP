@@ -54,6 +54,8 @@ const AllCourses = () => {
             <CourseCard
               image={"/images/courses/course6.png"}
               title={"Communicate Like A Pro"}
+              link={""}
+              label={"Available"}
             />
           </div>
           <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
@@ -61,6 +63,8 @@ const AllCourses = () => {
             <CourseCard
               image={"/images/courses/course5.png"}
               title={"Breaking the Einstein Code"}
+              link={"https://youtu.be/RY4px-r61xQ"}
+              label={"Available"}
             />
           </div>
           <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
@@ -68,21 +72,36 @@ const AllCourses = () => {
             <CourseCard
               image={"/images/courses/course4.png"}
               title={"Mapping Your Business Idea"}
+              link={"https://youtu.be/b1skeqtyRPo"}
+              label={"Available"}
             />
           </div>
 
-          {/* <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
+          <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
             {" "}
-            <CourseCard image={"/images/course-image.png"} />
+            <CourseCard
+              image={"/images/course-image.png"}
+              label={"Coming Soon"}
+              title={"Creative Thinking Skills"}
+            />
+          </div>
+          <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
+            {" "}
+            <CourseCard
+              image={"/images/course-image.png"}
+              label={"Coming Soon"}
+              title={"Complex Problem-Solving Skills"}
+            />
           </div>
           <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
             {" "}
             <CourseCard
               label={"Coming Soon"}
               image={"/images/course-image.png"}
+              title={"strategic Foresight"}
             />
           </div>
-          <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
+          {/* <div className="col-12 col-md-6 col-lg-4 px-5 my-4">
             {" "}
             <CourseCard image={"/images/course-image.png"} />
           </div>

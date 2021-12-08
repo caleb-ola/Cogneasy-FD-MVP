@@ -1,10 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import MentorCard from "../Reusable-components/mentor_card";
 
 // REDUX
 import { bindActionCreators } from "redux";
 import { actionCreators } from "../../state";
 import { useDispatch, useSelector } from "react-redux";
+
+// TOASTIFY
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Mentors = () => {
   const dispatch = useDispatch();
@@ -19,12 +23,192 @@ const Mentors = () => {
   if (state.data) {
     ment = state.data.data;
   }
+  const [name, setName] = useState("");
+  const [MentorName, setMentorName] = useState("");
+  const [email, setEmail] = useState("");
+  const [MentorEmail, setMentorEmail] = useState("");
+  const [pitch, setPitch] = useState("");
+
+  const Pass = (name, mail) => {
+    setMentorEmail(mail);
+    setMentorName(name);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const _data = JSON.stringify({
+      user_name: name,
+      user_email: email,
+      mentor_email: MentorEmail,
+      mentor_name: MentorName,
+      pitch: pitch,
+    });
+    fetch("https://cogneasy-mvp.herokuapp.com/api/v1/users/pitch-to-mentor", {
+      method: "POST",
+      body: _data,
+      headers: { "Content-type": "application/json; charset=UTF-8" },
+    })
+      .then((response) => response.json())
+      .then((json) => {
+        toast.success(
+          "Your request to get mentored was submitted successfully. We will reach out to you soon.",
+          {
+            position: "top-right",
+            autoClose: 8000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          }
+        );
+      })
+      .catch((err) =>
+        console.log(
+          toast.error("Something went wrong , please try again. Thank you.", {
+            position: "top-right",
+            autoClose: 8000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          })
+        )
+      );
+  };
 
   return (
     <section
       id="all-mentors"
       className="all-mentors my-4 px-4 my-md-5 pb-3 pb-md-5"
     >
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      {/* <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Launch demo modal
+      </button> */}
+
+      <div
+        class="modal fade  py-4"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered py-4">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3
+                class="modal-title"
+                id="exampleModalLabel"
+                className="fw-bold"
+              >
+                Fill in the information below
+              </h3>
+              <button
+                type="button"
+                class="btn-close shadow-none"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form onSubmit={handleSubmit}>
+                <div className="input-field my-3">
+                  <label htmlFor="name" className="fw-bold py-2">
+                    Full Name
+                  </label>
+                  <br />
+                  <input
+                    type="text"
+                    placeholder="E.g John Doe"
+                    className="name w-100 p-3"
+                    onChange={(e) => setName(e.target.value)}
+                    id="name"
+                  />
+                </div>
+                <div className="input-field my-3">
+                  <label htmlFor="email" className="fw-bold py-2">
+                    {" "}
+                    Email Address
+                  </label>
+                  <br />
+                  <input
+                    type="email"
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="E.g johndoe@gmail.com"
+                    className="email w-100 p-3"
+                    id="email"
+                  />
+                </div>
+                <div className="input-field my-3">
+                  <label htmlFor="text" className="fw-bold py-2">
+                    Why do you want to be mentored
+                  </label>
+                  <br />
+                  <textarea
+                    type="text"
+                    className="w-100 p-3"
+                    id=""
+                    style={{ height: "200px" }}
+                    placeholder="Pitch yourself in 100 words to the mentor"
+                    onChange={(e) => setPitch(e.target.value)}
+                  ></textarea>
+                </div>
+                {/* <div className="input-field"></div> */}
+                <input
+                  type="hidden"
+                  placeholder="E.g johndoe@gmail.com"
+                  className="email w-100 p-3"
+                  // value={}
+                  id="email"
+                />
+                <input
+                  type="hidden"
+                  placeholder="E.g johndoe@gmail.com"
+                  className="email w-100 p-3"
+                  id="email"
+                />
+                <button
+                  type="submit"
+                  className="btn course-btn px-3 px-md-5 py-2  my-3 shadow-none"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+            {/* <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div> */}
+          </div>
+        </div>
+      </div>
       <div className="container">
         <div className="section-header fw-bold text-center mt-5">
           <p className="fs-5 mb-2">OUR MENTORS</p>
@@ -67,6 +251,8 @@ const Mentors = () => {
               }
               btn={"Mentor Me"}
               image={"/images/mentors/dare_oduale.png"}
+              pass={Pass}
+              mail={"dareoduale@gmail.com"}
             />
           </div>
           <div className="col-12 col-xl-6 my-4 px-4">
@@ -84,6 +270,8 @@ const Mentors = () => {
                 "Prior to consulting, he worked in the Consumer Packaged Goods industry and in Academia. He received a PhD in Economics from Colorado State University. "
               }
               image={"/images/mentors/john_ohakim.png"}
+              pass={Pass}
+              mail={"johnohakim@gmail.com"}
             />
           </div>
           <div className="col-12 col-xl-6 my-4 px-4">
@@ -101,6 +289,8 @@ const Mentors = () => {
               }
               btn={"Mentor Me"}
               image={"/images/mentors/samuel_osho.png"}
+              pass={Pass}
+              mail={"inisamos@gmail.com"}
             />
           </div>
           <div className="col-12 col-xl-6 my-4 px-4">
@@ -118,6 +308,8 @@ const Mentors = () => {
               }
               btn={"Mentor Me"}
               image={"/images/mentors/tobenna_p.png"}
+              pass={Pass}
+              mail={"tcphilips87@icloud.com"}
             />
           </div>
           <div className="col-12 col-xl-6 my-4 px-4">
@@ -129,6 +321,8 @@ const Mentors = () => {
               }
               btn={"Mentor Me"}
               image={"/images/mentors/chima_omike.png"}
+              pass={Pass}
+              mail={"omikechima@gmail.com"}
             />
           </div>
         </div>

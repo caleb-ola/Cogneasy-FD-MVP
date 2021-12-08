@@ -8,7 +8,7 @@ const Footer = () => {
         src="/images/shapes/bottomWave.png"
         alt="abstract shape"
         className="img-fluid position-absolute bottom-wave waves"
-        // style={{ right: "0", top: "-300%", zIndex: "-1" }}
+        style={{ right: "0", top: "-220%", zIndex: "-1" }}
       />
       <div className="container py-3 py-lg-5">
         <div className="row">
@@ -87,8 +87,53 @@ const Footer = () => {
             <div className="footer-text">
               50, Ogbomoso-Ilorin Rd, General Area, Ogbomoso{" "}
             </div>
-            <div className="footer-buttons">
-              <div className="row d-inline-block py-3 fs-6 my-3 my-md-4">
+            <div className="footer-buttons text-start w-100">
+              <div className="icon-cirlce py-3 fs-6 my-3 my-md-4 w-100">
+                <ul className="p-0 w-100 ml-0 text-center text-md-start">
+                  <li className="text-center mx-3 ms-0">
+                    <a
+                      href="https://web.facebook.com/officialcogneasy"
+                      className="text-start p-2"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="fab fs-4 fa-facebook-f d-inline fa-lg  "></i>
+                    </a>
+                  </li>
+                  <li className="text-center mx-3">
+                    <a
+                      href="https://www.instagram.com/cogneasy/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="fab fs-4 fa-instagram d-inline fa-lg"></i>
+                    </a>
+                  </li>
+                  <li className="text-center mx-3">
+                    <a
+                      href=" https://www.linkedin.com/company/cogneasy/"
+                      className="text-decoration-none"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i class="fab fa-linkedin-in d-inline fa-lg"></i>
+                    </a>
+                  </li>
+                  <li className="mx-3">
+                    <a
+                      href="https://www.youtube.com/channel/UC3KTjDl-l5tD6GcknkOlkzA"
+                      className="text-decoration-none"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="fab fa-youtube fa-lg"></i>
+                    </a>
+                  </li>
+
+                  <li></li>
+                </ul>
+              </div>
+              {/* <div className="row d-inline-block py-3 fs-6 my-3 my-md-4">
                 <a
                   href="https://web.facebook.com/officialcogneasy"
                   className="text-decoration-none"
@@ -103,9 +148,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {/* <div className="social-icon-bg d-inline p-3"> */}
                   <i className="fab fs-4 fa-instagram d-inline mx-1 p-3 rounded-circle"></i>
-                  {/* </div> */}
                 </a>
 
                 <a
@@ -125,7 +168,7 @@ const Footer = () => {
                 >
                   <i className="fab fs-4 fa-youtube-square d-inline mx-1 p-2 p-xl-3 rounded-circle"></i>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

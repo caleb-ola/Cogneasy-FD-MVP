@@ -236,7 +236,7 @@ const Mentors = () => {
               );
             })} */}
 
-          <div className="col-12 col-xl-6 my-4 px-4">
+          <div className="col-12 col-xl-6 my-4 px-1 px-md-4">
             <MentorCard
               name={"Dare Oduale"}
               role={"Agile/Scrum Master, Great Britain"}
@@ -255,7 +255,7 @@ const Mentors = () => {
               mail={"dareoduale@gmail.com"}
             />
           </div>
-          <div className="col-12 col-xl-6 my-4 px-4">
+          <div className="col-12 col-xl-6 my-4 px-1 px-md-4">
             <MentorCard
               name={"John Ohakim"}
               role={"Data Analyst, USA"}
@@ -274,7 +274,7 @@ const Mentors = () => {
               mail={"johnohakim@gmail.com"}
             />
           </div>
-          <div className="col-12 col-xl-6 my-4 px-4">
+          <div className="col-12 col-xl-6 my-4 px-1 px-md-4">
             <MentorCard
               name={"Samuel Osho"}
               role={"Corporate Communications, Canada"}
@@ -293,7 +293,7 @@ const Mentors = () => {
               mail={"inisamos@gmail.com"}
             />
           </div>
-          <div className="col-12 col-xl-6 my-4 px-4">
+          <div className="col-12 col-xl-6 my-4 px-1 px-md-4">
             <MentorCard
               name={"Dr Tobenna Philips"}
               role={"Research/Cybersecurity, Canada"}
@@ -312,7 +312,7 @@ const Mentors = () => {
               mail={"tcphilips87@icloud.com"}
             />
           </div>
-          <div className="col-12 col-xl-6 my-4 px-4">
+          <div className="col-12 col-xl-6 my-4 px-1 px-md-4">
             <MentorCard
               name={"Chima Omike"}
               role={"Software QA/Renewable Energy, USA"}
@@ -336,7 +336,7 @@ const Mentors = () => {
             href="https://forms.gle/dPsBSW4JJLALDrqG9"
             target="_blank"
             rel="noreferrer"
-            className="btn course-btn px-4 px-md-5 py-3  shadow-none my-5"
+            className="btn course-btn px-1 px-md-4 px-md-5 py-3  shadow-none my-5"
           >
             Join the Waiting List
           </a>

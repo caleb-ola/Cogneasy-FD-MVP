@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const MentorCard = (props) => {
   return (
-    <div className="card mentor-card border-0 text-start p-3 ">
+    <div className="card mentor-card border-0 text-start p-3  ">
       <div className="card-body py-3 py-md-4 px-3 px-lg-4 position-relative">
         <div className="">
           <div className="row justify-content-center align-items-center align-content-center my-3">
@@ -21,7 +21,7 @@ const MentorCard = (props) => {
               <p className="lh-1 my-2 mentor-role">{props.role}</p>
             </div>
           </div>
-          <div className=" my-3">
+          <div className=" my-3 position-relative">
             <p className="my-2 text">{props.bio1}</p>
             <p className="my-2 text">{props.bio2}</p>
             <p className="my-2 mb-3 text">{props.bio3}</p>
@@ -29,7 +29,7 @@ const MentorCard = (props) => {
 
           <Link
             to=""
-            className="card-text fw-bold course-card-link  text-decoration-none border-bottom border-3 my-3 position-absolute"
+            className="card-text mentor-but fw-bold course-card-link  text-decoration-none border-bottom border-3 my-3"
             style={{ left: "5%", bottom: "3%" }}
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"

@@ -98,7 +98,7 @@ const AllCourses = () => {
             <CourseCard
               label={"Coming Soon"}
               image={"/images/course-image.png"}
-              title={"strategic Foresight"}
+              title={"Strategic Foresight"}
             />
           </div>
           {/* <div className="col-12 col-md-6 col-lg-4 px-5 my-4">

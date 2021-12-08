@@ -46,8 +46,8 @@ const Hero = () => {
 
                       {/*  */}
 
-                      <div className="icon-cirlce hero-slider-controls m-0 my-3">
-                        <ul className=" p-0">
+                      <div className="icon-cirlce hero-slider-controls m-0 my-3 text-center mx-auto">
+                        <ul className=" p-0 text-center text-md-start ">
                           <li
                             className="me-3"
                             data-bs-target="#carouselExampleControls"
@@ -104,8 +104,8 @@ const Hero = () => {
                         Find a Mentor
                       </a>
 
-                      <div className="icon-cirlce hero-slider-controls m-0 my-3">
-                        <ul className=" p-0">
+                      <div className="icon-cirlce hero-slider-controls m-0 my-3 mx-auto">
+                        <ul className=" p-0 text-center text-md-start">
                           <li
                             className="me-3"
                             data-bs-target="#carouselExampleControls"
@@ -160,8 +160,8 @@ const Hero = () => {
                         Start Learning
                       </a>
 
-                      <div className="icon-cirlce hero-slider-controls m-0 my-3">
-                        <ul className=" p-0">
+                      <div className="icon-cirlce hero-slider-controls m-0 my-3 mx-auto">
+                        <ul className=" p-0  text-center text-md-start">
                           <li
                             className="me-3"
                             data-bs-target="#carouselExampleControls"

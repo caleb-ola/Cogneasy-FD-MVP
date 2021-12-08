@@ -346,7 +346,11 @@ a.course-card-link:hover {
 .mentor-card {
   border-radius: 30px 0px 30px 30px;
   box-shadow: 0px 8px 30px 0px #0640b41f;
-  height: 700px;
+  height: auto;
+  /* padding-bottom: ; */
+}
+.mentor-but {
+  position: relative;
 }
 .mentor-role {
   color: #1b212483;
@@ -614,6 +618,9 @@ label {
     border-radius: 30px 0px 30px 30px;
     box-shadow: 0px 8px 30px 0px #0640b41f;
     height: 530px;
+  }
+  .mentor-but {
+    position: absolute;
   }
 }
 @media only screen and (min-width: 1024px) {

@@ -104,16 +104,17 @@ const Mentors = () => {
       </button> */}
 
       <div
-        className="modal fade  py-4"
+        className="modal fade "
         id="exampleModal"
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
+        // style={{width:""}}
       >
-        <div className="modal-dialog modal-dialog-centered py-4">
+        <div className="modal-dialog modal-dialog-centered py-4  ">
           <div className="modal-content">
             <div className="modal-header border-0 mt-4">
-              <h3 className="modal-title px-3 fw-bold" id="exampleModalLabel">
+              <h3 className="modal-title  fw-bold" id="exampleModalLabel">
                 Fill in the information below
               </h3>
               <button

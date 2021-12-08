@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import HttpsRedirect from "react-https-redirect";
 
 // CSS
 import "./App.css";
@@ -15,19 +16,21 @@ import ScrollToTop from "./components/Reusable-components/scrollToTop"; //COMPON
 const App = () => {
   // console.log(props);
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route path="contact" element={<Contact />} />
-        <Route path="acquire_a_skill" element={<Acquire />} />
-        <Route path="find_a_mentor" element={<FindMentor />} />
-        <Route path="about" element={<About />} />
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<Navigate to="/" />} />
-        {/* <Route render={() => <Navigate replace to="/" />} /> */}
-        {/* { component: () => <Navigate to="/404" /> } */}
-      </Routes>
-    </BrowserRouter>
+    <HttpsRedirect>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="contact" element={<Contact />} />
+          <Route path="acquire_a_skill" element={<Acquire />} />
+          <Route path="find_a_mentor" element={<FindMentor />} />
+          <Route path="about" element={<About />} />
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Navigate to="/" />} />
+          {/* <Route render={() => <Navigate replace to="/" />} /> */}
+          {/* { component: () => <Navigate to="/404" /> } */}
+        </Routes>
+      </BrowserRouter>
+    </HttpsRedirect>
   );
 };
 

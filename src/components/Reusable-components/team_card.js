@@ -6,10 +6,10 @@ const TeamCard = (props) => {
           {" "}
           <img
             src={props.image}
-            className="card-img-top img-fluid w-50 "
+            className="card-img-top img-fluid w-75 "
             alt="visual represntation for course"
           />
-          <h4 className="fs-4 fw-bold mt-3 mb-0  lh-1">{props.name}</h4>
+          <h4 className="fs-4 fw-bold mt-0 mb-0  lh-1 w-100">{props.name}</h4>
           <i>
             <p className="my-1">{props.role}</p>
           </i>

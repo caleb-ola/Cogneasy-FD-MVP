@@ -49,6 +49,7 @@ const Course = () => {
             {" "}
             <CourseCard
               image={"/images/courses/course6.png"}
+              link={"https://youtu.be/1XvPYdyeXFk"}
               title={"Communicate Like A Pro"}
               label={"Available"}
             />
@@ -57,6 +58,7 @@ const Course = () => {
             {" "}
             <CourseCard
               image={"/images/courses/course5.png"}
+              link={"https://youtu.be/RY4px-r61xQ"}
               title={"Breaking the Einstein Code"}
               label={"Available"}
             />
@@ -65,6 +67,7 @@ const Course = () => {
             {" "}
             <CourseCard
               image={"/images/courses/course4.png"}
+              link={"https://youtu.be/b1skeqtyRPo"}
               title={"Mapping Your Business Idea"}
               label={"Available"}
             />

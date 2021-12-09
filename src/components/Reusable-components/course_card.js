@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CourseCard = (props) => {
   return (
@@ -27,13 +28,26 @@ const CourseCard = (props) => {
         )}
 
         <h3 className="fs-4 fw-bold w-75 lh-1">{props.title}</h3>
-        {props.label === "Available" && (
+        {props.label === "Available" ? (
           <a
             href={props.link}
+            target="_blank"
+            rel="noreferrer"
             className="card-text course-card-link  text-decoration-none border-bottom border-3"
           >
             Start Now!
           </a>
+        ) : (
+          <Link
+            to=""
+            className="card-text course-card-link  text-decoration-none border-bottom border-3"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Join the Waiting List!
+          </Link>
         )}
       </div>
     </div>

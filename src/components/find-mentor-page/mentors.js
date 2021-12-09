@@ -64,17 +64,15 @@ const Mentors = () => {
         );
       })
       .catch((err) =>
-        console.log(
-          toast.error("Something went wrong , please try again. Thank you.", {
-            position: "top-right",
-            autoClose: 8000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          })
-        )
+        toast.error("Something went wrong , please try again. Thank you.", {
+          position: "top-right",
+          autoClose: 8000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        })
       );
   };
 
@@ -178,8 +176,6 @@ const Mentors = () => {
                 <button
                   type="submit"
                   className="btn course-btn px-3 px-md-5 py-2  my-3 mb-4 shadow-none"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
                 >
                   Submit
                 </button>

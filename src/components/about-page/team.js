@@ -6,7 +6,7 @@ const Team = () => {
       <div className="container pb-5">
         <div className="section-header fw-bold text-center my-0 py-0">
           <p className="fs-5 mb-2">OUR TEAM</p>
-          <h1 className="my-2 fw-bold">Content Stays Here</h1>
+          {/* <h1 className="my-2 fw-bold">Content Stays Here</h1> */}
         </div>
         <div className="row  justify-content-center align-items-center text-center">
           <div className="col-12 col-md-6 col-lg-4 px-5 my-4 mt-2">

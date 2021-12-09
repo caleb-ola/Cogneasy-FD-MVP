@@ -46,7 +46,7 @@ const Contact = () => {
           <div className="section-header fw-bold text-center w-100">
             <h1 className="my-2 fw-bold ">Become a Mentor or Course Creator</h1>
             <p className="fw-normal py-2 my-2 mt-3 w-75 mx-auto text">
-              Join us in preparing Africans for the futue of work
+              Join us in preparing Africans for the future of work
             </p>
             <a
               target="_blank"

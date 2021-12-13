@@ -371,7 +371,7 @@ const Mentors = () => {
             href="https://forms.gle/dPsBSW4JJLALDrqG9"
             target="_blank"
             rel="noreferrer"
-            className="btn course-btn px-1 px-md-4 px-md-5 py-3  shadow-none my-5"
+            className="btn course-btn px-3 px-md-4 px-md-5 py-3  shadow-none my-5"
           >
             Join the Waiting List
           </a>

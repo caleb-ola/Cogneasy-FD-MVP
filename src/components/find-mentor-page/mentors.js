@@ -312,6 +312,54 @@ const Mentors = () => {
               mail={"omikechima@gmail.com"}
             />
           </div>
+          <div className="col-12 col-xl-6 my-4 px-1 px-md-4">
+            <MentorCard
+              name={"Emmanuel O. Adesuyi"}
+              role={"Epidemiology/Genomics/Oncology, United Kingdom"}
+              bio1={
+                "Emmanuel O. Adesuyi was born in Lagos, Nigeria. He received a bachelor degree in nursing science from the Ladoke Akintola University of Technology, Ogbomoso, Nigeria, in 2012, and Master Degree in Public Health, Epidemiology and Infection Control specialty from the same university. He is registered with the nursing and midwifery council of Nigeria as a nurse and midwife. He is also registered with the Nursing and Midwifery Council of the United Kingdom as an adult nurse. "
+              }
+              bio2={
+                "His current research interests includes: Digital education, nursing education, tele-nursing genomics, genetics, oncology, cancer metastasis, and common public health issues. He is currently a doctoral research scholar and nurse educator at the Faculty of Health, Education and Life Science, Birmingham City University, United Kingdom."
+              }
+              btn={"Mentor Me"}
+              image={"/images/mentors/emmanuel.png"}
+              pass={Pass}
+              mail={"emmanueladesuyi12@gmail.com"}
+            />
+          </div>
+          <div className="col-12 col-xl-6 my-4 px-1 px-md-4">
+            <MentorCard
+              name={"Adeola Fakolade"}
+              role={"Preventive Medicine/Digital Health Solutions, USA"}
+              bio1={
+                "Adeola Fakolade is a physician, board-certified in General Preventive Medicine/Public Health and Family Medicine with over 10 years of experience caring for a diverse range of patients in the U.S., Nigeria, Ghana and Honduras. During her medical training, she was a member of the Organization of Resident Representatives at the Association of American Medical Colleges, served as chief resident and completed a rotation with the Unites States Preventive Services Task Force."
+              }
+              bio2={
+                "Her work over the years have focused on providing care, medical research, improving healthcare systems, and advocating for the medically underserved. Recently, she has developed an interest in digital health as a tool in the prevention and management of non-communicable diseases especially cancer."
+              }
+              btn={"Mentor Me"}
+              image={"/images/mentors/adekola.png"}
+              pass={Pass}
+              mail={"adeola.fakolade@gmail.com"}
+            />
+          </div>
+          <div className="col-12 col-xl-6 my-4 px-1 px-md-4">
+            <MentorCard
+              name={"Cletus Ajibade"}
+              role={"Software Engineering/Social Entrepreneurship, USA"}
+              bio1={
+                "Cletus Ajibade is a technology advocate, social entrepreneur, and software engineer. He is an IBM-powered ACM-ICPC Fellow, Etisalat Scholar, and a 'GES+' Young Innovator in the world honored by President Barack Obama. In 2016, he co-founded SaferMom, an innovative startup leveraging mobile technology to solve the problem of infant and maternal mortality in Nigeria. This service later became Babymigo, an online community for mothers and expecting moms."
+              }
+              bio2={
+                "Cletus is currently a Corporate Operations Manager at Centene Corporation where he uses his technology skills to help transform the health of the community one person at a time. He is a recipient of numerous awards such as the Etisalat Merit Award, the Nigerian Society of Engineers Award, and the NITDA eSolve Award for Indigenous IT solution."
+              }
+              btn={"Mentor Me"}
+              image={"/images/mentors/cletus.png"}
+              pass={Pass}
+              mail={"cletusajibade@gmail.com"}
+            />
+          </div>
         </div>
         <div className="section-header fw-bold text-center mt-5 pt-3">
           <h1 className="my-2 fw-bold ">

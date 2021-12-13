@@ -30,7 +30,7 @@ const MentorCard = (props) => {
           <Link
             to=""
             className="card-text mentor-but fw-bold course-card-link  text-decoration-none border-bottom border-3 my-3"
-            style={{ left: "5%", bottom: "3%" }}
+            style={{ left: "5%", bottom: "2%" }}
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
             onClick={() => props.pass(props.name, props.mail)}

@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="carousel-item active">
             <section id="hero-section" className="hero-section py-3">
               <div className="container">
-                <div className="row align-items-center justify-content-center text-center text-lg-start">
+                <div className="row align-items-center justify-content-center text-center text-md-start">
                   <div className="col-12 col-md-5 order-sm-2">
                     <img
                       src="/images/hero/Group72.png"

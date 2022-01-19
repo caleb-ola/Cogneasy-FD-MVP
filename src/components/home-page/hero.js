@@ -149,7 +149,7 @@ const Hero = () => {
                   <div className="col-12 col-md-7 order-sm-1">
                     <div className="hero-header-home hero-header m-0 py-1 py-md-3">
                       <h1 className="fw-bold mb-3 w-100">
-                        Acquire cutting-edge skills that gives you an advantage{" "}
+                        Acquire cutting-edge skills that give you an advantage{" "}
                       </h1>
 
                       <a
